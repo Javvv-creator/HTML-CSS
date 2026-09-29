@@ -1,0 +1,75 @@
+/*Diseño general*/
+body{
+    /*Color de fondo*/
+    background-color: rgb(44, 9, 9);
+    /*Fuente para el texto*/
+    font-family: Arial;
+    /*Margen predeterminado eliminado*/
+    margin: 0;
+    /*Espacio interno*/
+    padding: 30px;
+}
+
+h1{
+    /*Color al texto*/
+    color:white;
+    /*Centrar el texto*/
+    text-align: center;
+    /*Tamaño del texto*/
+    font-size: 24px;
+    /*Margen externo*/
+    margin-bottom: 30px;
+
+}
+
+.contenedor-libros{
+    /*Activa el CSS grid*/
+    display: grid;
+    /*Crea 5 columnas iguales*/
+    grid-template-columns: repeat(5, 1fr);
+    /*Espacio entre los libros*/
+    gap:30px;
+}
+.libro{
+    /*Fondo color chocolate para los libros*/
+    background-color: rgb(198, 201, 159);
+    /*Sirve para tener un borde en todos los libros*/
+    border: 2px solid rgb(255, 0, 0);
+    /*Espacio interno de cada libro*/
+    padding: 20px;
+    /*Establece una altura mínima*/
+    min-height: 190px;
+    /*Incluye padding y borde dentro del tamaño del minimo*/
+    box-sizing: border-box;
+}
+.libro h2{
+    /*Color para los titulos de los libros*/
+    color: white;
+    /*Tamaño para los titulo de los libros*/
+    font-size: 18px;
+    /*Elimina el espacio superior*/
+    margin-top:0;
+}
+.libro p{
+    /*Tamaño del texto*/
+    font-size: 14px;
+    /*Separacion entre cada dato*/
+    margin: 6 px 0;
+}
+.disponible{
+    /*Texto verde para los libros disponibles*/
+    color:green;
+    /*Aplicando negrita al texto disponible*/
+    font-weight: bold;
+}
+.no-disponible{
+    /*Texto rojo para los libros no disponibles*/
+    color:red;
+    /*Aplicando negrita al texto disponible*/
+    font-weight: bold;
+}
+
+.libro:hover{
+    /*Efecto de escala al pasar el mouse*/
+    transform: scale(1.05);
+}

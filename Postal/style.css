@@ -1,0 +1,84 @@
+/*JATC*/
+
+body {
+    display: flex;
+    /*usa flexbox para centrar*/
+    justify-content: center;
+    /*centrado horizontal*/
+    align-items: center;
+    /*centrado vertical*/
+    height: 100vh;
+    /*100% de alto*/
+    background: #e0e0e0;
+    /*color de fondo*/
+    margin: 0;
+    /*elimina margenes*/
+}
+
+.postcard {
+    width: 500px;
+    /*ancho de postal*/
+    height: 300px;
+    /*alto de postal*/
+    background: #fdfbf7;
+    /*color de fondo*/
+    border: 2px dashed #8b4513;
+    /*borde punteado*/
+    padding: 20px;
+    /*espacio interno*/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    /*sombra*/
+    display: flex;
+    /*distribuye los lados*/
+}
+
+.left-side {
+    width: 60%;
+    /*60% de ancho*/
+    padding-right: 20px;
+    /*espacio a la derecha*/
+}
+
+.right-side {
+    width: 40%;
+    /* 40% del ancho */
+    border-left: 2px solid #ddd;
+    /* Linea vertical */
+    padding-left: 20px;
+    /* Espacio a la izquierda */
+    display: flex;
+    /* Usa Flexbox */
+    flex-direction: column;
+    /* Elementos en columna */
+    justify-content: space-between;
+    /* Espacio entre elementos */
+}
+
+.stamp-box {
+    width: 80px;
+    /* Ancho de la estampilla */
+    height: 90px;
+    /* Alto de la estampilla */
+    border: 2px dotted #ccc;
+    /* Borde punteado (dotted) */
+    align-self: flex-end;
+    /* Alineado a la derecha */
+    background: #fff;
+    /* Fondo blanco */
+}
+
+.address-lines {
+    margin-top: 20px;
+    /* Espacio superior */
+}
+
+.line {
+    width: 100%;
+    /* Ancho completo */
+    height: 1px;
+    /* Grosor de la linea */
+    background: #ccc;
+    /* Color de la linea */
+    margin-bottom: 20px;
+    /* Espacio entre lineas */
+}

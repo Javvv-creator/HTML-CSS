@@ -1,0 +1,46 @@
+/*JATC*/
+body {
+    background: #333;
+    /*Color de fondo gris oscuro*/
+    padding: 20px;
+    /*Espacio interno alrededor*/
+    display: flex;
+    /*Usa flexbox*/
+    justify-content: center;
+    /*centra horizontalmente*/
+    align-items: center;
+    /*centra verticalmente*/
+    height: 100vh;
+    /*altura de toda la ventana*/
+    margin: 0;
+    /*sin margen*/
+}
+
+.box {
+    width: 100px;
+    /*ancho del cuadro*/
+    height: 50px;
+    /*alto del cuadro*/
+    margin: 10px;
+    /*margen entre cuadros*/
+    color: white;
+    /*color del texto*/
+    display: flex;
+    /*usa flexbox*/
+    align-items: center;
+    /*centra verticalmente el texto*/
+    justify-content: center;
+    /*centra horizontalmente el texto*/
+}
+
+/*cuadro rojo solido*/
+.solid {
+    background-color: rgb(255, 0, 0);
+    /*rojo*/
+}
+
+/*cuadro rojo transparente*/
+.trans {
+    background-color: rgba(255, 0, 0, 0.5);
+    /*rojo con 50 de opacidad*/
+}

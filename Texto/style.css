@@ -1,0 +1,46 @@
+/*JATC*/
+/* Estilos generales del cuerpo de la página */
+body {
+    display: flex;
+    /*usa flexbox para centrar*/
+    justify-content: center;
+    /*centrado horizontal*/
+    align-items: center;
+    /*centrado vertical*/
+    height: 100vh;
+    /*100% del alto*/
+    background: #ffffff;
+    /*color de fondo blanco*/
+    margin: 0;
+    /*elimina margenes por defecto*/
+    font-family: 'Georgia', 'Times New Roman', serif;
+    /*tipo de fuente*/
+}
+
+/* Estilo del texto */
+.rnb-text {
+    font-size: 90px;
+    /*tamaño grande del texto*/
+    font-weight: bold;
+    /*texto en negrita*/
+    text-transform: uppercase;
+    /*convierte en mayusculas*/
+    letter-spacing: -2px;
+    /*espacio entre letras*/
+    margin: 0;
+    /*sin margen*/
+
+    /* Degradado de color en el texto */
+    background: linear-gradient(135deg, #240046 0%,
+            #7b2cbf 50%, #ffd700 100%);
+    /*gradiente morado*/
+    -webkit-background-clip: text;
+    /*aplica el fondo solo al texto*/
+    background-clip: text;
+    /*propiedad estandar*/
+    color: transparent;
+    /*hace transparente el color del texto*/
+
+    /* Sombra para dar profundidad */
+    filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.11));
+}
