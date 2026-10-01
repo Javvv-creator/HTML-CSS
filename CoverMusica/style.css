@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    /* Usa flexbox para centrar */
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
+    height: 100vh;
+    /* alto de toda la ventana */
+    background: #b6b6b6;
+    /* Color de fondo */
+    font-family: sans-serif;
+    /* tipo de fuente */
+}
+
+.cover {
+    width: 300px;
+    /* ancho de la tarjeta */
+    height: 300px;
+    /* alto de la tarjeta */
+    background: linear-gradient(45deg,
+            /* angulo del degradado */
+            #0d012e 0%,
+            /* color inicial */
+            #381a8a 99%,
+            /* color intermedio - coma agregada aquí */
+            #000000 100%
+            /* color final */
+        );
+    border-radius: 20px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    position: relative;
+    /* Posición relativa */
+    overflow: hidden;
+    /* Oculta el desbordamiento */
+    display: flex;
+    /* Usa Flexbox */
+    flex-direction: column;
+    /* Elementos en columna */
+    justify-content: flex-end;
+    /* Alinea el contenido abajo */
+    padding: 20px;
+    /* Espaciado interno */
+    color: white;
+    /* Color del texto */
+}
+
+.circle {
+    position: absolute;
+    /* Posición absoluta */
+    top: -50px;
+    /* Mueve hacia arriba */
+    right: -50px;
+    /* Mueve a la derecha */
+    width: 200px;
+    /* Ancho del círculo */
+    height: 200px;
+    /* Alto del círculo */
+    background: rgba(255, 255, 255, 0.103);
+    /* Color blanco con transparencia */
+    border-radius: 50%;
+    /* Forma de círculo */
+}
+
+h2 {
+    margin: 0;
+    /* Sin margen */
+    font-size: 24px;
+    /* Tamaño de letra */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra en el texto */
+}
+
+p {
+    margin: 5px 0 0;
+    /* Margen superior */
+    font-size: 14px;
+    /* Tamaño de letra */
+    opacity: 0.9;
+    /* Ligera transparencia */
+}
